@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cambiar-fotos</title>
+    <style>
+
+        *{
+            margin:0px;
+
+        }
+          .ardilla{
+            background-image: url(imagen-ardilla.png);
+            width: 900px;
+            height: 600px;
+            position: relative;
+            top: 0px;
+            left:0px;
+            z-index: 0;
+        }
+      
+        .panda{
+            background-image: url(imagen-panda.jpg);
+            width: 900px;
+            height: 600px;
+            position: absolute;
+            z-index: 1;
+            top:0px;
+            left:0px;
+        }
+
+      
+
+        .panda:hover{
+            background-image: none;
+           transition: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ardilla"></div>
+    <div class="panda"></div>
+</body>
+</html>
